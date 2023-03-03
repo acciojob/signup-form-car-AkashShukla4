@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form method="post">
 <label for="name">Name</label>
 <input type="text" required placeholder="Name" id="name">
 <br>
@@ -18,14 +18,14 @@
 <br>
 <br>
 <label for="gender">Gender</label>
-<input type="radio" required id="gender_m" class="gender">
+<input type="radio" required id="gender_m" name="gender">
 <label for="gender_m">Male</label>
-<input type="radio" required id="gender_m" class="gender">
+<input type="radio" required id="gender_m" name="gender">
 <label for="gender_f">Female</label>
 <br>
 <br>
 <label for="cars">Car Brands</label>
-<select required>
+<select id="cars" required>
 <option value="" disabled selected hidden>--Please choose an option--</option>
 <option value="BMW">BMW</option>
 <option value="Audi"> Audi</option>
@@ -53,7 +53,7 @@
 <label for="tos">I agree to the TOS</label>
 <br>
 <br>
-<button>submit button</button>	
+<button type="submit">submit button</button>	
 </form>
 	
     <script type="text/javascript" src="./script.js">
